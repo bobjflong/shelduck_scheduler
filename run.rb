@@ -34,7 +34,7 @@ scheduler.interval '30m' do
   puts "Running!"
   result = nil
   2.times do
-    result = `cd ~/scalpel-master && stack exec scalpel intercom`
+    result = `cd ~/shelduck-master && stack exec shelduck intercom`
     break if success?(result)
     puts "Unsuccessful run"
   end
