@@ -1,0 +1,17 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    mail (2.6.3)
+      mime-types (>= 1.16, < 3)
+    mime-types (2.6.2)
+    rufus-scheduler (3.1.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  mail
+  rufus-scheduler
+
+BUNDLED WITH
+   1.10.3
