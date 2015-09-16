@@ -23,7 +23,7 @@ def mail(s)
   Mail.deliver do
        to ENV['shelduck_email_recipient']
      from "#{ENV['shelduck_email_username']}@gmail.com"
-  subject 'shelduck results' + (success?(s) ? '' : ' [failure]')
+  subject 'shelduck results' + (success?(s) ? '' : ' [failure] ') + Time.new.inspect
      body s
   end
 end
